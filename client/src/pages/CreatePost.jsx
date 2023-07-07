@@ -21,7 +21,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "http://localhost:8080/api/v1/post",
+          "https://dall-e-r22l.onrender.com/api/v1/post",
           {
             method: 'POST',
             headers: {
@@ -57,7 +57,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "http://localhost:8080/api/v1/dalle",
+          "https://dall-e-r22l.onrender.com/api/v1/dalle",
           {
             method: 'POST',
             headers: {
